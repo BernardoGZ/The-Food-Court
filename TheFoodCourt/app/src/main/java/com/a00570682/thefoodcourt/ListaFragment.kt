@@ -23,12 +23,6 @@ class ListaFragment : Fragment() {
     private var _binding: FragmentListaBinding? = null
     private val binding get () = _binding!!
 
-    val name = "Ch"
-    val description = "osidfanfdosa"
-    val image = "image1.png"
-    val screen = "ChilaquilesTecScreen"
-
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -41,7 +35,6 @@ class ListaFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         viewModel.newRestaurant()
         Log.i("Infoo", viewModel.restaurantsList.size.toString());
         Log.i("Infoo", viewModel.restaurantsList[0].name);

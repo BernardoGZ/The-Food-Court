@@ -95,13 +95,13 @@
         app:layout_constraintTop_toBottomOf="@+id/textView10">
 
         <RadioButton
-            android:id="@+id/radioButtonOrdMed"
+            android:id="@+id/OrdenMedia"
             android:layout_width="match_parent"
             android:layout_height="27dp"
             android:text="Media" />
 
         <RadioButton
-            android:id="@+id/radioButtonOrdComp"
+            android:id="@+id/OrdenCompleta"
             android:layout_width="match_parent"
             android:layout_height="29dp"
             android:text="Completa" />
@@ -118,19 +118,20 @@
         app:layout_constraintTop_toBottomOf="@+id/radioGroup">
 
         <RadioButton
-            android:id="@+id/radioButtonSalVerd"
+            android:id="@+id/Verdes"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:text="Verde" />
 
         <RadioButton
-            android:id="@+id/radioButtonSalRoj"
+            android:id="@+id/Rojas"
             android:layout_width="match_parent"
             android:layout_height="23dp"
             android:text="Roja" />
     </RadioGroup>
 
     <RadioGroup
+        android:id="@+id/checklist"
         android:layout_width="106dp"
         android:layout_height="100dp"
         android:layout_marginTop="20dp"

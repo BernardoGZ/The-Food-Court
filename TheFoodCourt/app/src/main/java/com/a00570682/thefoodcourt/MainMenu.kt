@@ -13,12 +13,6 @@ class MainMenu : AppCompatActivity() {
     //private val viewModel : MainMenuViewModel by activityViewModels()
 
     private lateinit var binding: MainContainerBinding
-    private val _foodRestaurants = mutableListOf<RestaurantCardData>()
-    val restaurantsList get() = _foodRestaurants
-    val name = "Ch"
-    val description = "osidfanfdosa"
-    val image = "image1.png"
-    val screen = "ChilaquilesTecScreen"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

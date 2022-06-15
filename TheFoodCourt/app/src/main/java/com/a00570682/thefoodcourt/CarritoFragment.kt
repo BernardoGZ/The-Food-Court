@@ -23,11 +23,6 @@ class CarritoFragment : Fragment() {
     private var _binding: FragmentCarritoBinding? = null
     private val binding get () = _binding!!
 
-    val name = "Ch"
-    val description = "osidfanfdosa"
-    val image = "image1.png"
-    val screen = "ChilaquilesTecScreen"
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -42,15 +37,21 @@ class CarritoFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        viewModel.newItem("Verdes", "22.5")
-//        Log.i("Infoo", viewModel.restaurantsList.size.toString());
-//        Log.i("Infoo", viewModel.restaurantsList[0].name);
+        viewModel.newItem("Orden Completa", "80")
+        viewModel.newItem("Rojos", "0")
+        viewModel.newItem("Pollo", "15")
 
         val adapter = CarritoAdapter(viewModel.orderList)
         binding.recyclerView.adapter = adapter
         binding.recyclerView.layoutManager = LinearLayoutManager(activity)
-    }
 
+        var total = 0
+        for (item in viewModel.orderList){
+            total += item.amount.toInt()
+        }
+
+        binding.textView6.text = "$" + total.toString()
+    }
 
 
     override fun onDestroyView() {
