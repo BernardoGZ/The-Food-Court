@@ -1,5 +1,6 @@
 package com.a00570682.thefoodcourt
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
@@ -24,16 +25,10 @@ class MainMenu : AppCompatActivity() {
         binding = MainContainerBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-//        newRestaurant()
-//
-//        val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
-//        var navController = navHostFragment.navController
-//        setupWithNavController(binding.bottomNav,navController)
+        binding.btnOrdenar.setOnClickListener {
+            val intent: Intent = Intent(this, RestaurantMenu::class.java)
+            startActivity(intent)
+        }
 
     }
-
-//    fun newRestaurant() {
-//        val newRest = RestaurantCardData(name, description, image, screen);
-//        _foodRestaurants.add(newRest)
-//    }
 }
