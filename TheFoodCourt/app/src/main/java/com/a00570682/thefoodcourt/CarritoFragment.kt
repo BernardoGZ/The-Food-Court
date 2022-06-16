@@ -37,6 +37,10 @@ class CarritoFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        /** Temporary solution
+         * Database failure
+         * **/
+
         viewModel.newItem("Orden Completa", "80")
         viewModel.newItem("Rojos", "0")
         viewModel.newItem("Pollo", "15")

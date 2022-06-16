@@ -5,12 +5,9 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI.setupWithNavController
-//import androidx.navigation.fragment.NavHostFragment
-//import androidx.navigation.ui.NavigationUI.setupWithNavController
 import com.a00570682.thefoodcourt.databinding.MainContainerBinding
 
 class MainMenu : AppCompatActivity() {
-    //private val viewModel : MainMenuViewModel by activityViewModels()
 
     private lateinit var binding: MainContainerBinding
 

@@ -8,7 +8,9 @@ class CarritoModelView: ViewModel() {
     val orderList get() = _orderList
 
     //TODO: add restaurants to List from the database
-    //Temporary solution:
+    /** Temporary solution
+     * Database failure
+     * **/
 
     fun newItem(pedido: String, amount: String) {
         val newMov = CarritoData(pedido, amount)

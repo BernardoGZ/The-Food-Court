@@ -12,8 +12,10 @@ class MainMenuViewModel: ViewModel() {
     val image = "image1.png"
     val screen = "ChilaquilesTecScreen"
 
+    /** Temporary solution
+     * Database failure
+     * **/
     //TODO: add restaurants to List from the database
-    //Temporary solution:
 
     fun newRestaurant() {
         val newRest = RestaurantCardData(name, description, image, screen);

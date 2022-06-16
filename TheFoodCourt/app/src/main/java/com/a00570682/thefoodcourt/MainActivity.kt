@@ -3,8 +3,6 @@ package com.a00570682.thefoodcourt
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-//import androidx.navigation.fragment.NavHostFragment
-//import androidx.navigation.ui.NavigationUI.setupWithNavController
 import com.a00570682.thefoodcourt.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

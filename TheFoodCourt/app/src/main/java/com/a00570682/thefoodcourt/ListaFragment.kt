@@ -36,8 +36,6 @@ class ListaFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         viewModel.newRestaurant()
-        Log.i("Infoo", viewModel.restaurantsList.size.toString());
-        Log.i("Infoo", viewModel.restaurantsList[0].name);
 
         val adapter = Adapter(viewModel.restaurantsList)
         binding.foodCardRV.adapter = adapter

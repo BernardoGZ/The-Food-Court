@@ -21,13 +21,9 @@ class Adapter (var restaurants: List<RestaurantCardData>) : RecyclerView.Adapter
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
-        //val id = R.drawable.image1
         holder.binding.apply {
             restName.text = restaurants[position].name
             restDescription.text = restaurants[position].description
-
-            //imageViewCard.setImageResource(R.drawable.image1)
-        //textViewFecha.text = restaurants[position].imagePath
         }
 
 
